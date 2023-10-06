@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    "net7.0": {}
+    "net7.0": {
+      "Calculadora/1.0.0": {
+        "type": "project",
+        "framework": "Unsupported,Version=v0.0",
+        "compile": {
+          "bin/placeholder/Calculadora.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Calculadora.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "Calculadora/1.0.0": {
+      "type": "project",
+      "path": "Calculadora/Calculadora.csproj",
+      "msbuildProject": "Calculadora/Calculadora.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net7.0": []
+    "net7.0": [
+      "Calculadora >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\Lean\\.nuget\\packages\\": {}
@@ -33,7 +52,11 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Lean\\Documents\\UTN\\Segundo cuatri\\programación y labo 2\\ParcialLabo2\\Calculadora\\Calculadora.csproj": {
+              "projectPath": "C:\\Users\\Lean\\Documents\\UTN\\Segundo cuatri\\programación y labo 2\\ParcialLabo2\\Calculadora\\Calculadora.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -64,5 +87,16 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1201",
+      "level": "Error",
+      "message": "El proyecto Calculadora no es compatible con net7.0 (.NETCoreApp,Version=v7.0). El proyecto Calculadora admite: net6.0-windows7.0 (.NETCoreApp,Version=v6.0)",
+      "libraryId": "Calculadora",
+      "targetGraphs": [
+        "net7.0"
+      ]
+    }
+  ]
 }

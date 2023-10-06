@@ -1,4 +1,6 @@
-﻿namespace ParcialLabo2
+﻿using Entidades;
+
+namespace ParcialLabo2
 {
     internal class Program
     {
